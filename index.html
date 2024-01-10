@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizz app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@500&family=Playfair+Display:ital,wght@0,400;1,500&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" defer src="controler.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="start-panel">
+        <h1 class="title__app">Quiz App</h1>
+        <div class="settings">
+          <div iv class="wrapper_setting">
+            <label for="num_questions">Number of Questions</label>
+            <select name="" id="num_questions">
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="25">25</option>
+              <option value="30">30</option>
+              <option value="35">35</option>
+              <option value="40">40</option>
+            </select>
+          </div>
+          <div class="wrapper_setting">
+            <label for="category_option">Select Category</label>
+            <select name="" id="category_option">
+              <option value="Any Category" disabled selected>
+                Any Category
+              </option>
+              <option value="Sports">Sports</option>
+              <option value="Animals">Animals</option>
+              <option value="History">History</option>
+              <option value="Celebrieties">Celebrieties</option>
+              <option value="Vehicles">Vehicles</option>
+            </select>
+          </div>
+          <div class="wrapper_setting">
+            <label for="difficulty_level">Select Category</label>
+            <select name="" id="difficulty_level">
+              <option value="" disabled selected>Any difficulty</option>
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+          </div>
+          <div class="wrapper_setting">
+            <label for="time_question">Select time per question</label>
+            <select name="" id="time_question">
+              <option value="10">10 second</option>
+              <option value="15">15 second</option>
+              <option value="20">20 second</option>
+            </select>
+          </div>
+          <button class="start_btn">Start Quiz</button>
+        </div>
+      </div>
+
+      <div class="wrapper_question_container">
+        <div class="question_panel">
+          <div class="progress_bar">
+            <div class="in_progress"></div>
+            <div class="in_progress_text">20</div>
+          </div>
+          <div class="wrapper_question_info">
+            <!-- <h2 class="question_title">
+              Question <span class="number_of_question">1 </span
+              ><span class="simple_tag">/</span>
+              <span class="total_question">20 </span>
+            </h2>
+            <p class="main_question">
+              What type of dog is 'Handome Dan'<br />
+              the mascot of Yale University
+            </p> -->
+          </div>
+          <div class="wrapper_question_answer">
+            <form action="" class="answer_form">
+              <!-- <div class="answer_div">
+                <label for="answer-1" class="answer_form_label">Pug</label>
+                <input
+                  type="radio"
+                  name="question_field"
+                  class="answer_radio_input"
+                  id="answer-1"
+                />
+              </div>
+              <div class="answer_div">
+                <label for="answer-2" class="answer_form_label">Pug</label>
+                <input
+                  type="radio"
+                  name="question_field"
+                  class="answer_radio_input"
+                  id="answer-2"
+                />
+              </div>
+              <div class="answer_div">
+                <label for="answer-3" class="answer_form_label">Pug</label>
+                <input
+                  type="radio"
+                  name="question_field"
+                  class="answer_radio_input"
+                  id="answer-3"
+                />
+              </div>
+              <div class="answer_div">
+                <label for="answer-4" class="answer_form_label">Pug</label>
+                <input
+                  type="radio"
+                  name="question_field"
+                  class="answer_radio_input"
+                  id="answer-4"
+                />
+              </div> -->
+              <!-- <button class="submit_btn">Submit</button> -->
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper-end-container">
+        <!-- <div class="end_div">
+          <h1 class="title__app">Quiz App</h1>
+          <div class="result_div">
+            <p>Your Score</p>
+            <div class="result_div_wrapper">
+              <span class="result_span">0</span>
+              <span class="simple-tag">/</span>
+              <span class="number_of_question">10</span>
+            </div>
+          </div>
+          <button class="restart_btn">Restart quiz</button>
+        </div> -->
+      </div>
+    </div>
+  </body>
+</html>
